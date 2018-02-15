@@ -1,0 +1,60 @@
+body {
+    background-color: #efefef;
+    color: #333;
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-box-shadow: 10px 10px 2px 0px rgba(210, 210, 210, 1);
+    box-shadow: 10px 10px 2px 0px rgba(210, 210, 210, 1);
+    background-color: white;
+}
+
+#description-text {
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 10px;
+}
+
+#interesting-fact {
+    font-style: italic;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#description-text li span {
+    font-weight: bold;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+figure img {
+    width: 300px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 6px;
+}
+
+figcaption,
+figcaption p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: .9em;
+}
