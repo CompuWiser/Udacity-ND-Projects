@@ -1,0 +1,222 @@
+/*
+COLORS
+#02b3e4
+#2d3c49
+#7d97ad
+
+IMAGES:
+
+    LOGO:
+    http: //imagizer.imageshack.us/a/img633/9615/hYuYNA.png
+
+    http: //udacity.github.io/60fps/images/udacity_logo.svg
+
+
+
+    HERO:
+    http://imageshack.com/a/img633/3417/Dc1mDW.png
+
+    https://i.pinimg.com/originals/48/8c/66/488c668a4bf17829190c64b020e17976.jpg
+    http://images.wisegeek.com/html-screen.jpg
+    https://fthmb.tqn.com/KcRINImgiE0Sy-OuxSr1fVM1SWY=/768x0/filters:no_upscale()/GettyImages-172272576-57f2a3b95f9b586c358e71f0.jpg
+
+    APPIFY:
+    http://imagizer.imageshack.us/a/img911/4885/E2RYms.png
+
+    https://rst-it.com/blog/content/images/2017/02/Featured-app-play-store.png
+    http://actualapple.com/wp-content/uploads/2017/08/fbf34ab8764dfd463de93c1618b68d47.png
+    https://tctechcrunch2011.files.wordpress.com/2016/06/apple-app-store-ios.jpg
+    https://i.gadgets360cdn.com/large/apple_app_store_1487744534615.jpg?output-quality=70&output-format=webp
+
+    SUNFLOWER:
+    http://imageshack.com/a/img633/9050/r4frHJ.png
+
+    https://wildflowerscout.files.wordpress.com/2012/08/bi-colored-sunflower.jpg
+    http://www.southernexposure.com/images/large/sunflower-evening-sun_LRG.jpg
+
+    BOKEH:
+    http://imagizer.imageshack.us/a/img908/9382/WeDArd.png
+
+    http://static.hdw.eweb4.com/media/thumbs/1/21/200542.jpg
+    https://www.canva.com/learn/wp-content/uploads/2018/01/BeautifulBokehEffect1-tb-728x0.jpg
+    https://img00.deviantart.net/b3fa/i/2012/254/9/9/bokeh_effect_by_chenst-d5eeoop.png
+
+*/
+
+html, body, section, main, header, article, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #2d3c49;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.9em;
+    letter-spacing: .2em;
+    margin: .2em 0;;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 15px auto 0 auto;
+    overflow: hidden;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.hero img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+    border-bottom: 4px solid #7d97ad;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: -25px;
+}
+
+.name {
+    font-size: 3em;
+}
+
+.job {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.name,
+.job,
+.featured-grid h2 {
+    text-transform: uppercase;
+}
+
+.featured {
+    font-size: 2em;
+    color: #7d97ad;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+    padding: 0 20px;
+}
+
+.name,
+.job {
+    display: block;
+    text-align: right;
+}
+
+.portfolio {
+    display: flex;
+    align-items: stretch;
+}
+
+.featured-grid {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 33%;
+}
+
+.featured-grid:not(:last-child) {
+    margin-right: 20px;
+}
+
+.featured-grid-image {
+    max-height: 400px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+    font-weight: 400;
+} 
+
+@media screen and (min-width: 600px) and (max-width: 1050px) {
+
+    .portfolio {
+        display: block;
+    }
+
+    .featured-grid {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .featured-grid:last-child{
+        margin-bottom: 10px;
+    }
+
+    .featured-grid img {
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    .description {
+        flex-grow: 2;
+        width: 67%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    h2 {
+        letter-spacing: initial;
+    }
+
+    header {
+        display: block;
+    }
+
+    header img,
+    .author {
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 2.3em;
+    }
+
+    .job {
+        font-size: 1.5em;
+    }
+
+    .name, .job, h1 {
+        text-align: center;
+    }
+
+    .portfolio {
+        display: block;
+    }
+
+    .featured-grid {
+        width: 100%;
+    }
+
+    .featured-grid:last-child {
+        margin-bottom: 10px;
+    }
+
+    header img {
+        position: static;
+    }
+}
