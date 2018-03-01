@@ -135,7 +135,7 @@ a:visited {
         margin-bottom: 10px;
     }
     
-    .featured-grid img {
+    .featured-grid-image {
         width: 33%;
         flex-grow: 1;
     }
@@ -186,7 +186,7 @@ a:visited {
     .featured-grid:last-child {
         margin-bottom: 10px;
     }
-    
+
     header img {
         position: static;
     }
