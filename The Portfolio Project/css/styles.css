@@ -48,6 +48,7 @@ img {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: space-between;
     padding: 0 20px 20px 20px;
@@ -93,6 +94,7 @@ header img {
 .featured-portfolio {
     display: flex;
     align-items: stretch;
+    flex-wrap: nowrap;
 }
 
 .featured-grid {
@@ -118,17 +120,19 @@ a:visited {
     font-weight: 400;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
+
     .featured-portfolio {
-        display: block;
+        flex-wrap: wrap;
     }
 
     .featured-grid {
         display: flex;
         width: 100%;
+        flex-basis: 100%;
         align-items: center;
         text-align: left;
-        margin-bottom: 20px;
+        margin: 0 0 20px 10px;
     }
 
     .featured-grid:last-child {
@@ -152,10 +156,6 @@ a:visited {
         letter-spacing: initial;
     }
 
-    header {
-        display: block;
-    }
-
     header img,
     .author {
         margin: 0 auto;
@@ -175,16 +175,27 @@ a:visited {
         text-align: center;
     }
 
-    .featured-portfolio {
-        display: block;
-    }
-
     .featured-grid {
         width: 100%;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    .featured-grid-image {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .description {
+        flex-grow: 1;
+        width: 100%;
+        padding-left: 0;
     }
 
     .featured-grid:last-child {
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 
     header img {
